@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+
+    <style>
+        header{
+            margin: auto;
+            background-color: blue;
+            padding: 40px;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        p{
+            
+            word-break: keep-all;
+            margin-left: 70px;
+        }
+
+
+        nav{
+            background-color: black;
+            padding: 0%;
+            margin: 0%;
+            color: wheat;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        body{
+            margin: 0%;
+            padding: 0%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <hr>
+        
+        <h1>Está abaixo o script de relatório</h1>
+        <hr>
+    </header>
+    <main>
+        <p>
+            
+        import time
+        <br>
+        <br>print('Mantenha este programa aberto, assim você não precisará inserir todas as informações novamente. ')
+        <br>print('==================================')
+        <br>
+        <br>pres = ['**⩥ALISTAMENTO MILITAR⩤**\n============================================\n►**Instrutor(a):**','►**Auxiliar:** N/A','►**Patente:**','============================================►\n**Participantes:**\n ','►**Aprovados:** ','►**Observação:** N/A\n','============================================►\n**Data:** ','►**Horário:** ','===========================================\n===============**▼COMPROVAÇÃO▼**===============']
+        <br>
+        <br>instrutor = input('Insira seu nome do Roblox: ')
+        <br>patente =  input('Insira sua patente, Ex: "[P-SGT]"   ')
+        <br>while True:
+        <br>    nomes = input('Insira o nome dos participantes, separando-os com vírgula: ')
+        <br>    print('==================================')
+        <br>    aprovados = input('Insira o nome dos aprovados, separando-os com vírgula: ')
+        <br>    print('==================================')
+        <br>    print('Carregando... ')
+        <br>    time.sleep(0.2)
+        <br>    listanomes = nomes.split(',')
+        <br>    listaaprovados = aprovados.split(',')
+        <br>
+        <br>    relatorio = ''
+        <br>relatorio += pres[0]
+        <br>relatorio += instrutor
+        <br>relatorio += '\n'
+        <br>relatorio += pres[1]
+        <br>relatorio += '\n'
+        <br>relatorio += pres[2]
+        <br>relatorio += patente
+        <br>relatorio += '\n'
+        <br>relatorio += pres[3]
+        <br>relatorio += '\n'
+        <br>relatorio += str(listanomes).replace(',','\n').replace("'", "").replace('[','').replace(']','')
+        <br>relatorio += '\n'
+        <br>relatorio += pres[4]
+        <br>relatorio += '\n'
+        <br>relatorio += str(listaaprovados).replace(',','\n').replace("'", "").replace('[','').replace(']','')
+        <br>relatorio += '\n'
+        <br>relatorio += pres[5]
+        <br>relatorio += '\n'
+        <br>relatorio += pres[6]
+        <br>relatorio += str(time.localtime().tm_mday) + '/' + str(time.localtime().tm_mon)+ '/' + str(time.localtime().tm_year)
+        <br>relatorio += '\n'
+        <br>relatorio += pres[7]
+        <br>relatorio += str(time.localtime().tm_hour) + ':' + str(time.localtime().tm_min)
+        <br>relatorio += '\n'
+        <br>relatorio += pres[8]
+        <br>relatorio += '\n'
+        <br>
+        <br>
+        <br>print('==================================')
+        <br>print()
+        <br>print(relatorio)
+        <br>print()
+        <br>time.sleep(5)
+        <br>input('Pressione enter para fazer outro relatório com as informações já salvas.' )
+        <br>print()
+        <br>print('==================================')
+        <br>
+        </p>
+
+        <nav>
+            <p>Acabou o Script</p>
+        </nav>
+    </main>
+
+    
+</body>
+</html>
